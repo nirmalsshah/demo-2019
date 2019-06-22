@@ -1,0 +1,53 @@
+{
+  "uid" : "b204b11ebe9eeb7c",
+  "name" : "And I enter Shah into lastname text fields on home screen",
+  "title" : "And I enter Shah into lastname text fields on home screen",
+  "time" : {
+    "start" : 1560605876781,
+    "stop" : 1560605876781,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "c91273d260eb05dc",
+    "name" : "Signup form should not accept any invalid email address | plainaddress |",
+    "title" : "Signup form should not accept any invalid email address | plainaddress |"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-title",
+    "value" : "Signup form should not accept any invalid email address | plainaddress |"
+  }, {
+    "name" : "thread",
+    "value" : "93087@zhengdeMBP.fios-router.home.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "CucumberJVM"
+  }, {
+    "name" : "feature",
+    "value" : "Login feature"
+  }, {
+    "name" : "story",
+    "value" : "Signup form should not accept any invalid email address | plainaddress |"
+  }, {
+    "name" : "host",
+    "value" : "zhengdeMBP.fios-router.home"
+  }, {
+    "name" : "suite-name",
+    "value" : "Signup form should not accept any invalid email address | plainaddress |"
+  } ],
+  "parameters" : [ ]
+}

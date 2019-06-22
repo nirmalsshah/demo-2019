@@ -1,0 +1,296 @@
+{
+  "time" : {
+    "start" : 1560605875915,
+    "stop" : 1560605898373,
+    "duration" : 22458
+  },
+  "testSuites" : [ {
+    "uid" : "c91273d260eb05dc",
+    "name" : "Signup form should not accept any invalid email address | plainaddress |",
+    "title" : "Signup form should not accept any invalid email address | plainaddress |",
+    "time" : {
+      "start" : 1560605875915,
+      "stop" : 1560605877373,
+      "duration" : 1458
+    },
+    "statistic" : {
+      "total" : 7,
+      "passed" : 7,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "b214d9ad9ee66bcf",
+      "name" : "Given I am on home page",
+      "title" : "Given I am on home page",
+      "time" : {
+        "start" : 1560605875915,
+        "stop" : 1560605875922,
+        "duration" : 7
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3e504b10b639e495",
+      "name" : "When I enter Nirmal into firstname text fields on home screen",
+      "title" : "When I enter Nirmal into firstname text fields on home screen",
+      "time" : {
+        "start" : 1560605876631,
+        "stop" : 1560605876631,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b204b11ebe9eeb7c",
+      "name" : "And I enter Shah into lastname text fields on home screen",
+      "title" : "And I enter Shah into lastname text fields on home screen",
+      "time" : {
+        "start" : 1560605876781,
+        "stop" : 1560605876781,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b94e706da079e951",
+      "name" : "And I enter plainaddress into mobile number text fields on home screen",
+      "title" : "And I enter plainaddress into mobile number text fields on home screen",
+      "time" : {
+        "start" : 1560605877026,
+        "stop" : 1560605877026,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c9c42d44561c7854",
+      "name" : "And I click on password field",
+      "title" : "And I click on password field",
+      "time" : {
+        "start" : 1560605877169,
+        "stop" : 1560605877169,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1e54b9bd1c668e9f",
+      "name" : "And I click on exclamation icon",
+      "title" : "And I click on exclamation icon",
+      "time" : {
+        "start" : 1560605877317,
+        "stop" : 1560605877317,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "161adf31a3a5a349",
+      "name" : "Then I should see invalid email error popup",
+      "title" : "Then I should see invalid email error popup",
+      "time" : {
+        "start" : 1560605877373,
+        "stop" : 1560605877373,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  }, {
+    "uid" : "472e6937017a2e9a",
+    "name" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |",
+    "title" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |",
+    "time" : {
+      "start" : 1560605887226,
+      "stop" : 1560605898373,
+      "duration" : 11147
+    },
+    "statistic" : {
+      "total" : 7,
+      "passed" : 5,
+      "pending" : 1,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 1
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "5f1a5600668d5075",
+      "name" : "Given I am on home page",
+      "title" : "Given I am on home page",
+      "time" : {
+        "start" : 1560605887226,
+        "stop" : 1560605887226,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ab9aae3e58c11624",
+      "name" : "When I enter Nirmal into firstname text fields on home screen",
+      "title" : "When I enter Nirmal into firstname text fields on home screen",
+      "time" : {
+        "start" : 1560605887428,
+        "stop" : 1560605887428,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b9911b18559089e3",
+      "name" : "And I enter Shah into lastname text fields on home screen",
+      "title" : "And I enter Shah into lastname text fields on home screen",
+      "time" : {
+        "start" : 1560605887605,
+        "stop" : 1560605887605,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7bbf8d41be4a6671",
+      "name" : "And I enter Joe Smith <email@example.com> into mobile number text fields on home screen",
+      "title" : "And I enter Joe Smith <email@example.com> into mobile number text fields on home screen",
+      "time" : {
+        "start" : 1560605888093,
+        "stop" : 1560605888093,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "586a918b35aa0cdc",
+      "name" : "And I click on password field",
+      "title" : "And I click on password field",
+      "time" : {
+        "start" : 1560605888232,
+        "stop" : 1560605888232,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "93ac869dd9fdeb74",
+      "name" : "And I click on exclamation icon",
+      "title" : "And I click on exclamation icon",
+      "time" : {
+        "start" : 1560605898335,
+        "stop" : 1560605898362,
+        "duration" : 27
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "137869fab0f972c4",
+      "name" : "Then I should see invalid email error popup",
+      "title" : "Then I should see invalid email error popup",
+      "time" : {
+        "start" : 1560605898371,
+        "stop" : 1560605898373,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "PENDING"
+    } ]
+  }, {
+    "uid" : "2bb35233fa4daa6f",
+    "name" : "Signup form should not accept any invalid email address | plainaddress$$$$$ |",
+    "title" : "Signup form should not accept any invalid email address | plainaddress$$$$$ |",
+    "time" : {
+      "start" : 1560605882020,
+      "stop" : 1560605883148,
+      "duration" : 1128
+    },
+    "statistic" : {
+      "total" : 7,
+      "passed" : 7,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "21471bdd04d3c497",
+      "name" : "Given I am on home page",
+      "title" : "Given I am on home page",
+      "time" : {
+        "start" : 1560605882020,
+        "stop" : 1560605882020,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ef4638076362579e",
+      "name" : "When I enter Nirmal into firstname text fields on home screen",
+      "title" : "When I enter Nirmal into firstname text fields on home screen",
+      "time" : {
+        "start" : 1560605882295,
+        "stop" : 1560605882295,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "98ff84158437f67e",
+      "name" : "And I enter Shah into lastname text fields on home screen",
+      "title" : "And I enter Shah into lastname text fields on home screen",
+      "time" : {
+        "start" : 1560605882456,
+        "stop" : 1560605882456,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "96cfe6382bd212bc",
+      "name" : "And I enter plainaddress$$$$$ into mobile number text fields on home screen",
+      "title" : "And I enter plainaddress$$$$$ into mobile number text fields on home screen",
+      "time" : {
+        "start" : 1560605882818,
+        "stop" : 1560605882819,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8d24ff3dd7a02f65",
+      "name" : "And I click on password field",
+      "title" : "And I click on password field",
+      "time" : {
+        "start" : 1560605882926,
+        "stop" : 1560605882926,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fd76445b237b2609",
+      "name" : "And I click on exclamation icon",
+      "title" : "And I click on exclamation icon",
+      "time" : {
+        "start" : 1560605883058,
+        "stop" : 1560605883058,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1493981cd4317e5e",
+      "name" : "Then I should see invalid email error popup",
+      "title" : "Then I should see invalid email error popup",
+      "time" : {
+        "start" : 1560605883148,
+        "stop" : 1560605883148,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

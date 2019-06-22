@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1560605875865" stop="1560605877602" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Signup form should not accept any invalid email address | plainaddress |</name>
+    <title>Signup form should not accept any invalid email address | plainaddress |</title>
+    <test-cases>
+        <test-case start="1560605875915" stop="1560605875922" status="passed">
+            <name>Given I am on home page</name>
+            <title>Given I am on home page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605876631" stop="1560605876631" status="passed">
+            <name>When I enter Nirmal into firstname text fields on home screen</name>
+            <title>When I enter Nirmal into firstname text fields on home screen</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605876781" stop="1560605876781" status="passed">
+            <name>And I enter Shah into lastname text fields on home screen</name>
+            <title>And I enter Shah into lastname text fields on home screen</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605877026" stop="1560605877026" status="passed">
+            <name>And I enter plainaddress into mobile number text fields on home screen</name>
+            <title>And I enter plainaddress into mobile number text fields on home screen</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605877169" stop="1560605877169" status="passed">
+            <name>And I click on password field</name>
+            <title>And I click on password field</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605877317" stop="1560605877317" status="passed">
+            <name>And I click on exclamation icon</name>
+            <title>And I click on exclamation icon</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605877373" stop="1560605877373" status="passed">
+            <name>Then I should see invalid email error popup</name>
+            <title>Then I should see invalid email error popup</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Signup form should not accept any invalid email address | plainaddress |"/>
+        <label name="feature" value="Login feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

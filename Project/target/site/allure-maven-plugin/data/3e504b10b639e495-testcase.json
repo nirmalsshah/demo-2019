@@ -1,0 +1,53 @@
+{
+  "uid" : "3e504b10b639e495",
+  "name" : "When I enter Nirmal into firstname text fields on home screen",
+  "title" : "When I enter Nirmal into firstname text fields on home screen",
+  "time" : {
+    "start" : 1560605876631,
+    "stop" : 1560605876631,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "c91273d260eb05dc",
+    "name" : "Signup form should not accept any invalid email address | plainaddress |",
+    "title" : "Signup form should not accept any invalid email address | plainaddress |"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-title",
+    "value" : "Signup form should not accept any invalid email address | plainaddress |"
+  }, {
+    "name" : "thread",
+    "value" : "93087@zhengdeMBP.fios-router.home.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "CucumberJVM"
+  }, {
+    "name" : "feature",
+    "value" : "Login feature"
+  }, {
+    "name" : "story",
+    "value" : "Signup form should not accept any invalid email address | plainaddress |"
+  }, {
+    "name" : "host",
+    "value" : "zhengdeMBP.fios-router.home"
+  }, {
+    "name" : "suite-name",
+    "value" : "Signup form should not accept any invalid email address | plainaddress |"
+  } ],
+  "parameters" : [ ]
+}

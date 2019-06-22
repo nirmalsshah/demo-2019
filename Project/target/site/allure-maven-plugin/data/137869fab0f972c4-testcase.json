@@ -1,0 +1,56 @@
+{
+  "uid" : "137869fab0f972c4",
+  "name" : "Then I should see invalid email error popup",
+  "title" : "Then I should see invalid email error popup",
+  "time" : {
+    "start" : 1560605898371,
+    "stop" : 1560605898373,
+    "duration" : 2
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Test ignored (without reason)!",
+    "stackTrace" : "There are no stack trace"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PENDING",
+  "testId" : null,
+  "suite" : {
+    "uid" : "472e6937017a2e9a",
+    "name" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |",
+    "title" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "93087@zhengdeMBP.fios-router.home.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |"
+  }, {
+    "name" : "framework",
+    "value" : "CucumberJVM"
+  }, {
+    "name" : "feature",
+    "value" : "Login feature"
+  }, {
+    "name" : "story",
+    "value" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |"
+  }, {
+    "name" : "suite-name",
+    "value" : "Signup form should not accept any invalid email address | Joe Smith <email@example.com> |"
+  }, {
+    "name" : "host",
+    "value" : "zhengdeMBP.fios-router.home"
+  } ],
+  "parameters" : [ ]
+}

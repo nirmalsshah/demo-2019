@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1560605887225" stop="1560605898666" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Signup form should not accept any invalid email address | Joe Smith &lt;email@example.com&gt; |</name>
+    <title>Signup form should not accept any invalid email address | Joe Smith &lt;email@example.com&gt; |</title>
+    <test-cases>
+        <test-case start="1560605887226" stop="1560605887226" status="passed">
+            <name>Given I am on home page</name>
+            <title>Given I am on home page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605887428" stop="1560605887428" status="passed">
+            <name>When I enter Nirmal into firstname text fields on home screen</name>
+            <title>When I enter Nirmal into firstname text fields on home screen</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605887605" stop="1560605887605" status="passed">
+            <name>And I enter Shah into lastname text fields on home screen</name>
+            <title>And I enter Shah into lastname text fields on home screen</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605888093" stop="1560605888093" status="passed">
+            <name>And I enter Joe Smith &lt;email@example.com&gt; into mobile number text fields on home screen</name>
+            <title>And I enter Joe Smith &lt;email@example.com&gt; into mobile number text fields on home screen</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605888232" stop="1560605888232" status="passed">
+            <name>And I click on password field</name>
+            <title>And I click on password field</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605898335" stop="1560605898362" status="broken">
+            <name>And I click on exclamation icon</name>
+            <title>And I click on exclamation icon</title>
+            <failure>
+                <message>ElementNotVisibleException: element not interactable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'zhengdeMBP.fios-router.home', ip: 'fe80:0:0:0:188b:dc97:c069:d5a1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/6l/2k03z_257nz...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56784}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 67814cda0e307f5ef379e7877c7e103d</message>
+                <stack-trace>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'zhengdeMBP.fios-router.home', ip: 'fe80:0:0:0:188b:dc97:c069:d5a1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/6l/2k03z_257nz...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56784}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+Session ID: 67814cda0e307f5ef379e7877c7e103d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at framework.webPages.BasePage.clickOn(BasePage.java:39)
+	at framework.webPages.HomePage.clickOnErrorIcon(HomePage.java:100)
+	at stepdefinition.LoginSD.clickOnExclamationIcon(LoginSD.java:92)
+	at ✽.And I click on exclamation icon(login.feature:48)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1560605898371" stop="1560605898373" status="pending">
+            <name>Then I should see invalid email error popup</name>
+            <title>Then I should see invalid email error popup</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="zhengdeMBP.fios-router.home"/>
+                <label name="thread" value="93087@zhengdeMBP.fios-router.home.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Signup form should not accept any invalid email address | Joe Smith &lt;email@example.com&gt; |"/>
+        <label name="feature" value="Login feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
