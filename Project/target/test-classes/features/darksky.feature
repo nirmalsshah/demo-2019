@@ -30,6 +30,4 @@ Feature: Testing Darksky Features
     @darksky-4
 
     Scenario: Verify timline is displayed in correct format
-
-
-      Then I verify timeline is displayed with two hours incremented for LosAngeles
+      Then I verify timeline is displayed with 2 hours incremented for NewYork

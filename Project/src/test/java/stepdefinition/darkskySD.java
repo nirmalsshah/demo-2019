@@ -2,6 +2,7 @@ package stepdefinition;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import framework.webPages.RegisterPage;
 import framework.webPages.darkskyhomepage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,6 +16,7 @@ import java.util.*;
 public class darkskySD {
 
     private darkskyhomepage ds = new darkskyhomepage();
+    private RegisterPage rp = new RegisterPage();
 
     @Given("^I am on Darksky Home Page$")
     public void iAmOnDarkSkyPage(){
@@ -25,9 +27,9 @@ public class darkskySD {
     @Given("^I am on the darksky Register page$")
     public void verifyIamOnDarkSkyPage() throws InterruptedException{
         ds.clickOnDarkSkyApi();
-        Thread.sleep(2000);
-        ds.clickOnSignUp();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        rp.clickOnSignUp();
+        //Thread.sleep(2000);
     }
 
 
@@ -50,7 +52,7 @@ public class darkskySD {
         List<WebElement> temps = ds.getAllTemps();
 
 
-        ArrayList<String> listString = new ArrayList<String>();
+        //ArrayList<String> listString = new ArrayList<String>();
         ArrayList<Integer> listInt = new ArrayList<Integer>();
 
         for (int i =0; i<12; i++){
@@ -67,24 +69,28 @@ public class darkskySD {
 
 
 
-        for  (int i=0; i<listString.size();i++){
-            listInt.add(Integer.parseInt(listString.get(i)));
-        }
+//        for  (int i=0; i<listString.size();i++){
+//            listInt.add(Integer.parseInt(listString.get(i)));
+//        }
 
         System.out.println("Temperature range displayed on screen : " +listInt);
 
         System.out.println("Minimum value of Temperature Range: " + Collections.min(listInt));
         System.out.println("Maximum value of Temperature Range: " + Collections.max(listInt));
 
-        WebElement getcurrentTemp = SharedSD.getDriver().findElement(By.xpath("//span[@class='summary swap']"));
+        //WebElement getcurrentTemp = SharedSD.getDriver().findElement(By.xpath("//span[@class='summary swap']"));
 
-        int currentTemp = Integer.parseInt(getcurrentTemp.getText().substring(0,2));
+        String getcurrentTemp = ds.getCurentTemp();
+
+        System.out.println(getcurrentTemp);
+        int findIndexOfDegreeSymbol = getcurrentTemp.indexOf("˚");
+
+        int currentTemp = Integer.parseInt(getcurrentTemp.substring(0,findIndexOfDegreeSymbol));
 
         System.out.println("Current Temp is: " +currentTemp);
 
+        Assert.assertTrue(currentTemp>=Collections.min(listInt) && currentTemp<=Collections.max(listInt));
 
-        Assert.assertTrue(currentTemp>=Collections.min(listInt));
-        Assert.assertTrue(currentTemp<=Collections.max(listInt));
 
     }
 
@@ -93,15 +99,19 @@ public class darkskySD {
     @When("^I expand today's timeline$")
     public void iExpandTimeLine() throws InterruptedException{
 
-        JavascriptExecutor js= (JavascriptExecutor) SharedSD.getDriver();
+//        JavascriptExecutor js= (JavascriptExecutor) SharedSD.getDriver();
+//
+//        js.executeScript("window.scrollBy(0,800)", "");
+//        Thread.sleep(2000);
 
-        js.executeScript("window.scrollBy(0,800)", "");
-        Thread.sleep(2000);
+        ds.javaScriptExecutor("800");
 
-        List<WebElement> minTempBefore = SharedSD.getDriver().findElements(By.xpath("//span[@class='minTemp']"));
+       // List<WebElement> minTempBefore = SharedSD.getDriver().findElements(By.xpath("//span[@class='minTemp']"));
+
+        List<WebElement> minTempBefore = ds.getMinTempsBeforExapnsion();
 
         minTempBefore.get(0).click();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
 
         }
 
@@ -111,18 +121,22 @@ public class darkskySD {
     @Then("^I verify lowest and highest temp is displayed correctly$")
     public void verifyLowestHighestTemp(){
 
-        List<WebElement> minTempBeforeList = SharedSD.getDriver().findElements(By.xpath("//span[@class='minTemp']"));
+        //List<WebElement> minTempBeforeList = SharedSD.getDriver().findElements(By.xpath("//span[@class='minTemp']"));
+        List<WebElement> minTempBeforeList = ds.getMinTempsBeforExapnsion();
 
         String minTempBeforeExpansion = minTempBeforeList.get(0).getText();
         System.out.println("Min before expansion :" + minTempBeforeExpansion);
 
-        List<WebElement> maxTempBeforeList = SharedSD.getDriver().findElements(By.xpath("//span[@class='maxTemp']"));
+        //List<WebElement> maxTempBeforeList = SharedSD.getDriver().findElements(By.xpath("//span[@class='maxTemp']"));
+        List<WebElement> maxTempBeforeList = ds.getMaxTempsBeforExapnsion();
+
         String maxTempBeforeExpansion = maxTempBeforeList.get(0).getText();
         System.out.println("Max before expansion :" + maxTempBeforeExpansion);
 
 
 
-        List<WebElement> tempAfterExpansion = SharedSD.getDriver().findElements(By.xpath("//span[@class='temp']"));
+        //List<WebElement> tempAfterExpansion = SharedSD.getDriver().findElements(By.xpath("//span[@class='temp']"));
+        List<WebElement> tempAfterExpansion = ds.tempsAfterExpansion();
 
         String minTempAfter = tempAfterExpansion.get(0).getText();
         System.out.println("Min after expansion :" +minTempAfter);
@@ -170,7 +184,7 @@ public class darkskySD {
 
                 ds.searchForCity() ;
                 ds.clickOnSearchIcon();
-                Thread.sleep(2000);
+                //Thread.sleep(2000);
                 break;
 
         }
@@ -193,7 +207,9 @@ public class darkskySD {
 
 
 
-        List<WebElement> timeIntervalsDarkSky = SharedSD.getDriver().findElements(By.xpath("//div[@class=\"hours\"]//span//span"));
+        //List<WebElement> timeIntervalsDarkSky = SharedSD.getDriver().findElements(By.xpath("//div[@class=\"hours\"]//span//span"));
+        List<WebElement> timeIntervalsDarkSky = ds.timeIntervalsDarkSky();
+
 
         ArrayList<String> timeIntervalWebsite = new ArrayList<String>();
 
@@ -205,7 +221,7 @@ public class darkskySD {
 
         boolean areTwoArraysEqual = timeInterval.equals(timeIntervalWebsite);
         Assert.assertTrue(areTwoArraysEqual, "Timeline is not as expected");
-        System.out.println("Are both arrays equal ? " +areTwoArraysEqual);
+        //System.out.println("Are both arrays equal ? " +areTwoArraysEqual);
 
         if (areTwoArraysEqual){
             System.out.println("Since 2 arrays are equal, we can confirm timeline is incremented at 2 hour interval");
