@@ -2,6 +2,8 @@ package framework.webPages;
 
 import com.google.common.base.Function;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
@@ -11,10 +13,14 @@ import stepdefinition.SharedSD;
 import java.time.Duration;
 import java.util.List;
 
+
+
 /**
  * Created by mohammadmuntakim
  */
 public class BasePage {
+
+
 
 	// This is the most common wait function used in selenium
 	public static WebElement webAction(final By locator) {
@@ -97,6 +103,25 @@ public class BasePage {
 
 	public void clearSearchField(By locator){
 		webAction(locator).clear();
+	}
+
+
+
+
+
+
+	public void pressEnter (By locator) {
+		webAction(locator).sendKeys(Keys.ENTER);
+	}
+
+	public void clickOn2(By element){
+		SharedSD.getDriver().findElement(element);
+
+	}
+
+	public void clickOn3(By element){
+		SharedSD.getDriver().findElement(element).click();
+
 	}
 
 }
